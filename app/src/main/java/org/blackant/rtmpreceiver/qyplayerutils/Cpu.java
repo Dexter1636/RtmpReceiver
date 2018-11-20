@@ -1,6 +1,4 @@
-package net.qyvideo.qianyiplayer.util;
-
-import android.util.Log;
+package org.blackant.rtmpreceiver.qyplayerutils;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -8,9 +6,7 @@ import java.io.InputStreamReader;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-/**
- * Created by QianYi-Xin on 2015/6/1.
- */
+
 public class Cpu {
     static final String USER_CPU_REGEX = "((?i)(use?r\\s+[0-9]{1,2}(\\.[0-9]{1,2})?\\%))|([0-9]{1,2}\\.[0-9]{1,2}\\%\\s+(?i)(use?r))";
     static final String SYSTEM_CPU_REGEX = "((?i)(sys(tem)?\\s+[0-9]{1,2}(\\.[0-9]{1,2})?\\%))|([0-9]{1,2}\\.[0-9]{1,2}\\%\\s+(?i)(sys(tem)?))";

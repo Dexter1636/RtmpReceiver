@@ -1,16 +1,13 @@
-package net.qyvideo.qianyiplayer.util;
+package org.blackant.rtmpreceiver.qyplayerutils;
 
 import android.app.ActivityManager;
 import android.content.Context;
 import android.os.Debug;
 import android.os.Handler;
-import android.util.Log;
 
-import org.hhu.surface.VideoPlayerActivity;
+import org.blackant.rtmpreceiver.ui.VideoActivity;
 
-/**
- * Created by QianYi-Xin on 2015/6/1.
- */
+
 public class QosThread extends Thread{
 
     private Context mContext;
@@ -42,7 +39,7 @@ public class QosThread extends Thread{
                 mQosObject.cpuUsage = mCpuStats.getProcessCpuUsage();
                 mQosObject.pss = mi.getTotalPss();
                 mQosObject.vss = mi.getTotalPrivateDirty();
-                mHandler.obtainMessage(VideoPlayerActivity.UPDATE_QOS, mQosObject).sendToTarget();
+                mHandler.obtainMessage(VideoActivity.UPDATE_QOS, mQosObject).sendToTarget();
             }
             try {
                 sleep(3);

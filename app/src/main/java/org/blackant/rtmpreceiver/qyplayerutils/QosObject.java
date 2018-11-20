@@ -1,8 +1,6 @@
-package net.qyvideo.qianyiplayer.util;
+package org.blackant.rtmpreceiver.qyplayerutils;
 
-/**
- * Created by QianYi-Xin on 2015/6/1.
- */
+
 public class QosObject {
     public QosObject(){}
 
